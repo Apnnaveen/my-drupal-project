@@ -1,0 +1,53 @@
+<?php
+use Drupal\Core\Database\Database;
+
+/**
+ * Implements hook_schema().
+ */
+function drupal_form_schema(){
+    
+    $schema['user_info'] = array(
+        'description' => 'The table for storing the user information',
+        'fields' => array(
+            'user_id' => array(
+                'description' => 'Primary identifier for User',
+                'type' => 'serial',
+                'not null' => TRUE,
+                'unsigned' => TRUE,
+            ),
+            'title' => array(
+                'description' => 'Title of the User',
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+            'name' => array(
+                'description' => 'User Full Name',
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+            'age' => array(
+                'description' => 'Age of User',
+                'type' => 'int',
+                'not null' => TRUE,
+            ),
+            'qualification' => array(
+                'description' => 'Qualification of the User',
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+            'images' => array(
+                'description' => 'Identifier for Image',
+                'type' => 'int',
+                'not null' => TRUE,
+              ),
+        ),
+        'primary key' => array('user_id'),
+    );
+    return $schema;
+}

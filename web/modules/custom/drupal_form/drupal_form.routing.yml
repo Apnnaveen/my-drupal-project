@@ -1,0 +1,15 @@
+drupal_form.drupal_validation_form:
+  path: '/drupal-form'
+  defaults:
+    _form: '\Drupal\drupal_form\Form\DrupalForm'
+    _title: 'students details'
+  requirements:
+    _permission: 'access content'
+
+drupal_form.drupal_validation_form_controller:
+  path: '/drupal-form-controller'
+  defaults:
+    _controller: '\Drupal\drupal_form\Controller\Drupal_FormController::content'
+    _title: 'students'
+  requirements:
+    _permission: 'access content'

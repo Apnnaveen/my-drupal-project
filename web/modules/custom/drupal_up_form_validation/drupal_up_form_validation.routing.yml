@@ -1,0 +1,7 @@
+drupalup_up_form_validation.drupal_up_validation_form:
+  path: '/validation-form'
+  defaults:
+    _form: '\Drupal\drupal_up_form_validation\Form\DrupalUpValidationForm'
+    _title: 'Our example validation form'
+  requirements:
+    _permission: 'access content'

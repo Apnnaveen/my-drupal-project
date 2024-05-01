@@ -1,0 +1,20 @@
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Qualification</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for person in people %}
+        <tr>
+            <td>{{ person.title }}</td>
+            <td>{{ person.name }}</td>
+            <td>{{ person.age }}</td>
+            <td>{{ person.qualification }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

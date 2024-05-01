@@ -1,0 +1,5 @@
+name: 'Example Module'
+type: module
+description: 'Provides an example controller.'
+core_version_requirement: ^8 || ^9
+package: Custom

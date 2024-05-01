@@ -1,0 +1,4 @@
+name: Drupal Up form validation
+description: Implementing an example of form validation
+type: module
+core: 8.x

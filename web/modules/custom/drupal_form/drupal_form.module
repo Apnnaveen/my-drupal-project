@@ -1,0 +1,71 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ *
+ * We use hook_theme to define the templates used.
+ */
+function drupal_form_theme($existing, $type, $theme, $path)
+{
+  // dd("hi");
+  return [
+    'drupal_table' => [
+      'variables' => [
+        'data' => '',
+      ],
+    ],
+
+
+  ];
+}
+/**
+ * Implements hook_form_alter().
+ */
+function drupal_form_form_alter(&$form, &$form_state, $form_id)
+{
+  //  dd("hi");
+
+
+  if ($form_id == 'drupal_form') {
+
+    $nid = \Drupal::request()->query->get('id');
+    // dd($nid);
+    if ($nid) {
+      $node = \Drupal\node\Entity\Node::load($nid);
+      //  dd($node);
+      if ($node) {
+        $name = $node->get('field_name')->getvalue();
+        $title = $node->get('title')->getvalue();
+        $age = $node->get('field_age')->getvalue();
+        $qualification = $node->get('field_qualification')->getvalue();
+        $images = $node->get('field_images')->getvalue();
+        $file_id = $images[0]["target_id"];
+        $file = \Drupal\file\Entity\File::load($file_id);
+        // dd($file );
+
+
+        if ($name) {
+          $form['name']['#default_value'] = $name[0]['value'];
+        }
+        if ($title) {
+          $form['title']['#default_value'] = $title[0]['value'];
+        }
+        if ($age) {
+          $form['age']['#default_value'] = $age[0]['value'];
+        }
+        if ($qualification) {
+          $form['qualification']['#default_value'] = $qualification[0]['value'];
+        }
+        if (($images[0]['target_id'])) {
+          // Get the file entity of the image
+          $file = \Drupal\file\Entity\File::load($images[0]['target_id']);
+          if ($file) {
+            // Build the image element
+            $form['images']['#default_value'] = [$file->id()];
+          }
+        }
+        // dd($form);
+      }
+    }
+  }
+}
