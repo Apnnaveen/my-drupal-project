@@ -1,0 +1,29 @@
+uuid: 711630e3-7161-490c-b1fb-b1bdbf2a5a5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reference_field
+    - node.type.d8drupal
+    - taxonomy.vocabulary.tags
+id: node.d8drupal.field_reference_field
+field_name: field_reference_field
+entity_type: node
+bundle: d8drupal
+label: 'Reference field'
+description: 'Help text for reference field.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

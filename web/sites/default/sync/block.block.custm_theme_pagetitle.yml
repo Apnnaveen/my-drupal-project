@@ -1,0 +1,18 @@
+uuid: d87be353-b933-420d-a0da-7c9f186493ba
+langcode: en
+status: true
+dependencies:
+  theme:
+    - custm_theme
+id: custm_theme_pagetitle
+theme: custm_theme
+region: header
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: Blocks
+  provider: core
+  label_display: '0'
+visibility: {  }

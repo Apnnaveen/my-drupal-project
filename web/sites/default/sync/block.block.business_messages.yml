@@ -1,0 +1,22 @@
+uuid: 06b96310-d220-4d54-bd52-34674deaf63c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - business
+_core:
+  default_config_hash: PHsMgQb4QPenv6CM3bCnBvLXd47tblwbwU8Ep8ndfhY
+id: business_messages
+theme: business
+region: header
+weight: -50
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

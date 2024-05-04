@@ -1,0 +1,19 @@
+uuid: 4bed2805-cebe-4383-b17e-ff6fa7eed6f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_qualification
+    - node.type.students
+id: node.students.field_qualification
+field_name: field_qualification
+entity_type: node
+bundle: students
+label: Qualification
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

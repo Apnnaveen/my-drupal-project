@@ -1,0 +1,32 @@
+uuid: 9a38ba5e-72fd-4f68-a92d-ed8d85db563d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.d8drupal.body
+    - field.field.node.d8drupal.field_reference_field
+    - node.type.d8drupal
+  module:
+    - text
+    - user
+id: node.d8drupal.teaser
+targetEntityType: node
+bundle: d8drupal
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_reference_field: true

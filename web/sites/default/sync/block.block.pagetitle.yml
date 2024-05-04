@@ -1,0 +1,18 @@
+uuid: ad37ad3e-b17a-4986-9b9f-ae6d0b7924ac
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bartik
+id: pagetitle
+theme: bartik
+region: header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: Blocks
+  provider: core
+  label_display: '0'
+visibility: {  }

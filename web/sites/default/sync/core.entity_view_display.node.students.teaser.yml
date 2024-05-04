@@ -1,0 +1,28 @@
+uuid: 8c64cd87-3be7-4db4-ab7a-7a4cf329a59d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.students.field_age
+    - field.field.node.students.field_images
+    - field.field.node.students.field_name
+    - field.field.node.students.field_qualification
+    - node.type.students
+  module:
+    - user
+id: node.students.teaser
+targetEntityType: node
+bundle: students
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_age: true
+  field_images: true
+  field_name: true
+  field_qualification: true

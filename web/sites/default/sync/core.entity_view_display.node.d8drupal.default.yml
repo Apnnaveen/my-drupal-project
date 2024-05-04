@@ -1,0 +1,37 @@
+uuid: 875be129-4594-4f39-87bb-21c0ba7ee878
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.d8drupal.body
+    - field.field.node.d8drupal.field_reference_field
+    - node.type.d8drupal
+  module:
+    - text
+    - user
+id: node.d8drupal.default
+targetEntityType: node
+bundle: d8drupal
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_reference_field:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,23 @@
+uuid: c0e71101-2848-4b7e-a3c7-b5dd3724766c
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - business
+_core:
+  default_config_hash: oYW8qEyKpFWmGJv73ew2bRvYH19MFvjJ_XL1bAn0Rsk
+id: business_search
+theme: business
+region: header
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+  page_id: ''
+visibility: {  }

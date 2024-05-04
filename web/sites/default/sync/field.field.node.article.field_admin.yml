@@ -1,0 +1,21 @@
+uuid: 3a0db3c7-92d9-46ea-8f8b-a7d8e4643051
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_admin
+    - node.type.article
+id: node.article.field_admin
+field_name: field_admin
+entity_type: node
+bundle: article
+label: admin
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

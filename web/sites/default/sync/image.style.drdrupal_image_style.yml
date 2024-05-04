@@ -1,0 +1,7 @@
+uuid: cc4b1bb3-834c-4dec-8499-a34ce1a931c6
+langcode: en
+status: true
+dependencies: {  }
+name: drdrupal_image_style
+label: 'Drdrupal image style'
+effects: {  }
