@@ -2,3 +2,276 @@
  * If using a CSS pre-processor, tell it to overwrite this file. If not, place
  * your custom CSS modifications here.
  */
+ .pic {
+    background-image: url("../img/bg.jpg");
+  
+    background-size: cover;
+    width: 100%;
+    height: 575px;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 35px;
+  
+  }
+  
+  .file {
+  
+  
+    background-color: #f2f2f2;
+    /* position: absolute; */
+    /* top: 100px; */
+    height: 27em;
+    /* left: 40%; */
+    background-size: cover;
+    padding: 70px;
+    /* margin-top: 35px; */
+  
+  
+  }
+  
+  .fire {
+    /* background-color: rgb(22, 5, 120); */
+    width: 100%;
+    /* height: 350px; */
+    color: whitesmoke;
+    margin-top: 35px;
+    background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9));
+    background-size: cover;
+    padding: 120px 0;
+    /* margin-top: 20px; */
+  
+  }
+  
+  .fire:hover {
+    background: #47b2e4;
+    border: 2px solid #47b2e4;
+  }
+  
+  .box {
+    background-color: #f2f2f2;
+    padding: 70px;
+    margin-top: 35px;
+    
+  }
+  
+  .services .icon-box {
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+    padding: 50px 30px;
+    transition: all ease-in-out 0.4s;
+    background: #fff;
+  }
+  
+  .services .icon-box .icon {
+    margin-bottom: 10px;
+  }
+  
+  .services .icon-box .icon i {
+    color: #47b2e4;
+    font-size: 36px;
+    transition: 0.3s;
+  }
+  
+  .services .icon-box h4 {
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  
+  .services .icon-box h4 a {
+    color: #37517e;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .services .icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  .services .icon-box:hover {
+    transform: translateY(-10px);
+  }
+  
+  .services .icon-box:hover h4 a {
+    color: #47b2e4;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .cta {
+    background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9));
+    background-size: cover;
+    padding: 120px 0;
+  }
+  
+  .cta h5 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  
+  .cta p {
+    color: #fff;
+  }
+  
+  
+  .cta:hover {
+    background: #47b2e4;
+    border: 2px solid #47b2e4;
+  }
+  
+  p.clr {
+    color: red;
+  }
+  
+  .bg {
+    background-color: rgb(1, 1, 91);
+    color: #f2f2f2;
+    margin-top: 30px;
+  }
+  
+  .get-in-touch {
+    /* max-width: 800px; */
+    /* margin: 50px auto; */
+    position: relative;
+    margin-top: 30px;
+    background-color: #37517e;
+    height: 580px;
+  
+  }
+  
+  .get-in-touch .title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 3.2em;
+    line-height: 48px;
+    /* padding-bottom: 48px; */
+    color: #5543ca;
+    background: #5543ca;
+    /* background: -moz-linear-gradient(left,#f4524d  0%,#5543ca 100%) !important; */
+    /* background: -webkit-linear-gradient(left,#f4524d  0%,#5543ca 100%) !important;
+        background: linear-gradient(to right,#f4524d  0%,#5543ca  100%) !important; */
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+  }
+  
+  .contact-form .form-field {
+    position: relative;
+    margin: 32px 0;
+  }
+  
+  .contact-form .input-text {
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: white;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    background-color: #37517e;
+  }
+  
+  .contact-form .input-text:focus {
+    outline: none;
+  }
+  
+  .contact-form .input-text:focus+.label,
+  .contact-form .input-text.not-empty+.label {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+  }
+  
+  .contact-form .label {
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #ffffff;
+    cursor: text;
+    transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out,
+      -webkit-transform .2s ease-in-out;
+  }
+  
+  .contact-form .submit-btn {
+    display: inline-block;
+  
+    background-color: #37517e;
+    /* background-image: linear-gradient(125deg,#a72879,#064497); */
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    width: 200px;
+    cursor: pointer;
+  }
+  
+  .contact-form .submit-btn:hover {
+    background-color: #f4524d;
+  }
+  
+  .cls {
+    color: #37517e;
+  }
+  
+  .push,
+  .push1,
+  .push2,
+  .last {
+    color: #f2f2f2;
+  }
+  .sss.find-btn:hover {
+    background-color: red;
+  }
+  .sss{
+    color: white;
+    background-color: #37517e;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  @media only screen and (max-width: 800px) {
+  
+    .file {
+      position: initial;
+      width: 100%;
+      height: 350px;
+  
+    }
+  
+    .box {
+      padding: initial;
+  
+      width: 100%;
+  
+      height: 400px;
+    }
+  
+  
+  
+  }
+  
+  @media only screen and (max-width: 400px) {
+  
+    .file {
+      position: initial;
+      width: 100%;
+      height: 500px;
+  
+    }
+  
+  }

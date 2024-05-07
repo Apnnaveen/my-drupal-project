@@ -119,6 +119,7 @@ class DrupalForm extends FormBase
 
     // Save to content
     $this->saveContent($title, $name, $age, $qualification, $images);
+ 
 
     // Optionally, you can also show a message to the user
     $connection = Database::getConnection();

@@ -1,0 +1,57 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a menu.
+ *
+ * Available variables:
+ * - classes: A list of classes to apply to the top level <ul> element.
+ * - dropdown_classes: A list of classes to apply to the dropdown <ul> element.
+ * - menu_name: The machine name of the menu.
+ * - items: A nested list of menu items. Each menu item contains:
+ *   - attributes: HTML attributes for the menu item.
+ *   - below: The menu item child items.
+ *   - title: The menu link title.
+ *   - url: The menu link url, instance of \Drupal\Core\Url
+ *   - localized_options: Menu link localized options.
+ *
+ * @ingroup templates
+ */
+#}
+{# {% extends "menu.html.twig" %}
+{%
+  set classes = [
+    'nav',
+    'navbar-nav',
+    'text-center'
+  ]
+%} #}
+{% if items %}
+    
+  <div class="container">   
+  <button class="navbar-toggler" id="nav-button" type="button" >
+     <i class="lni-menu"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+  <ul class="navbar-nav mr-auto w-100 justify-content-end">
+    {% for item in items %}
+      <li class="nav-item" {{ item.attributes }}>
+        <a  class="nav-link page-scroll" href="{{ item.url }}">{{ item.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  </div>
+  </div>
+  
+
+{% endif %}
+
+
+   {% if site_logo %}
+    <a class="logo navbar-btn pull-left" href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">
+      <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
+    </a>
+  {% endif %}
+  
+  {# {{dd(site_logo)}} #}
+
+
