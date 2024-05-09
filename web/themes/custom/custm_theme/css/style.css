@@ -2,6 +2,14 @@
  * If using a CSS pre-processor, tell it to overwrite this file. If not, place
  * your custom CSS modifications here.
  */
+ /* #navbarCollapse{
+  background-color: #f4524d;
+ } */
+ img, svg {
+  height: 100px;
+  width: 100px;
+}
+
  .pic {
     background-image: url("../img/bg.jpg");
   

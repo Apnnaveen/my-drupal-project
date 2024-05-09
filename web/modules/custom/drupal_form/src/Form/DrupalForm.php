@@ -66,9 +66,11 @@ class DrupalForm extends FormBase
       '#type' => 'submit',
       '#value' => $this->t('Submit'),
     ];
-
+ 
     return $form;
+   
   }
+  
 
   /**
    * {@inheritdoc}
@@ -112,11 +114,7 @@ class DrupalForm extends FormBase
     $age = $form_state->getValue('age');
     $qualification = $form_state->getValue('qualification');
     $images = $form_state->getValue('images');
-
-
-
-
-
+  
     // Save to content
     $this->saveContent($title, $name, $age, $qualification, $images);
  
@@ -140,10 +138,7 @@ class DrupalForm extends FormBase
 
   private function saveContent($title, $name, $age, $qualification, $images)
   {
-    // Save the values to content
-    // This is just a placeholder. Implement your content save logic here.
-    // For example, you can save it to a custom entity type or a node.
-    // Replace this with your content saving logic.
+
     $nid = \Drupal::request()->query->get('id');
     if ($nid){
   

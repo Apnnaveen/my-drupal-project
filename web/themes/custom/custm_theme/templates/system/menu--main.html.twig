@@ -25,33 +25,32 @@
     'text-center'
   ]
 %} #}
-{% if items %}
-    
-  <div class="container">   
-  <button class="navbar-toggler" id="nav-button" type="button" >
-     <i class="lni-menu"></i>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarCollapse">
-  <ul class="navbar-nav mr-auto w-100 justify-content-end">
-    {% for item in items %}
-      <li class="nav-item" {{ item.attributes }}>
-        <a  class="nav-link page-scroll" href="{{ item.url }}">{{ item.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-  </div>
-  </div>
-  
+<nav class=" navbar navbar-expand-lg bg-body-tertiary" style="height: 100px; font-size: 18px;">
+    <div class="container">
+        <button class="navbar-toggler" id="nav-button" type="button">
+            <i class="lni-menu"></i>
+        </button>
+        {% if logo %}
+            <img src="{{ logo }}" alt="Logo" width="100" height="100" class="d-inline-block align-text-top">
+        {% endif %}
+        <div class="collapse navbar-collapse justify-content-end " id="navbarCollapse">
+            <ul class="navbar-nav flex-row">
+                {% if items %}
+                    {% for item in items %}
+                        <li class="nav-item" {{ item.attributes }}>
+                            <a class="nav-link page-scroll" href="{{ item.url }}">{{ item.title }}</a>
+                        </li>
+                    {% endfor %}
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</nav>
 
-{% endif %}
 
 
-   {% if site_logo %}
-    <a class="logo navbar-btn pull-left" href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">
-      <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
-    </a>
-  {% endif %}
-  
-  {# {{dd(site_logo)}} #}
+
+
+
 
 

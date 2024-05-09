@@ -1,17 +1,26 @@
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://localhost/my-drupal-project/web/themes/contrib/bootstrap/favicon.ico'
-  use_default: true
-features:
-  comment_user_picture: true
-  comment_user_verification: true
-  favicon: true
-  node_user_picture: true
-logo:
-  path: ''
-  url: ''
-  use_default: true
+  url: 'http://localhost/my-drupal-project/web/themes/custom/custm_theme/favicon.ico'
+  use_default: 1
 schemas:
   bootstrap: 8000
   custm_theme: 8000
+features:
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+  node_user_picture: 1
+logo:
+  path: 'public://Screenshot 2024-05-08 134802.png'
+  url: ''
+  use_default: 0
+table_responsive: '-1'
+cdn_theme: bootstrap
+cdn_cache_ttl_versions: '604800'
+cdn_cache_ttl_themes: '604800'
+cdn_cache_ttl_assets: '0'
+cdn_cache_ttl_library: '0'
+reset_http_request_cache: ''
+table: ''
+image_shape: img-rounded

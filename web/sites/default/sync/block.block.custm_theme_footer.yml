@@ -13,7 +13,7 @@ _core:
 id: custm_theme_footer
 theme: custm_theme
 region: header
-weight: 0
+weight: -5
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

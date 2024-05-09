@@ -1,0 +1,39 @@
+uuid: 62355f14-cceb-48ad-bacc-6f07706b9bc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.slideshow.body
+    - field.field.node.slideshow.field_slider
+    - node.type.slideshow
+  module:
+    - image
+    - text
+    - user
+id: node.slideshow.default
+targetEntityType: node
+bundle: slideshow
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_slider:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
