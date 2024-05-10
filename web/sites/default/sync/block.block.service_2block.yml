@@ -1,0 +1,25 @@
+uuid: 6b621dcc-26a0-40cf-ae86-625435a6c4f5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:service_2:857fe2ab-abb0-4bdc-9875-5ebcd596619a'
+  module:
+    - block_content
+  theme:
+    - custm_theme
+id: service_2block
+theme: custm_theme
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:857fe2ab-abb0-4bdc-9875-5ebcd596619a'
+settings:
+  id: 'block_content:857fe2ab-abb0-4bdc-9875-5ebcd596619a'
+  label: service_2
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

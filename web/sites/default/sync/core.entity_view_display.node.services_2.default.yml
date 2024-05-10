@@ -1,0 +1,46 @@
+uuid: d8297b5d-a2e9-4242-8d8c-dc88be155d64
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.services_2.field_bottom
+    - field.field.node.services_2.field_head
+    - field.field.node.services_2.field_middle
+    - node.type.services_2
+  module:
+    - user
+id: node.services_2.default
+targetEntityType: node
+bundle: services_2
+mode: default
+content:
+  field_bottom:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_head:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_middle:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,29 +1,20 @@
-uuid: 62355f14-cceb-48ad-bacc-6f07706b9bc5
+uuid: af1ce0f1-4e74-4c19-8cfd-b4231dd8f57b
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.slideshow.body
-    - field.field.node.slideshow.field_slider
-    - node.type.slideshow
+    - field.field.node.slider_images.field_photos
+    - node.type.slider_images
   module:
     - image
-    - text
     - user
-id: node.slideshow.default
+id: node.slider_images.default
 targetEntityType: node
-bundle: slideshow
+bundle: slider_images
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
+  field_photos:
     weight: 101
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_slider:
-    weight: 102
     label: above
     settings:
       image_style: ''

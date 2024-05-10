@@ -1,0 +1,19 @@
+uuid: 3efd8475-8ddb-4bea-800f-fb13d78a1451
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_head
+    - node.type.services_2
+id: node.services_2.field_head
+field_name: field_head
+entity_type: node
+bundle: services_2
+label: head
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

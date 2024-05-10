@@ -1,19 +1,19 @@
-uuid: 66e65b5c-8b78-421b-bf59-254503a8ef3b
+uuid: e571c4b7-d64e-433e-b82e-1454cad54740
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_slider
+    - field.storage.node.field_photos
     - image.style.flexslider_full
-    - node.type.slideshow
+    - node.type.slider_images
   module:
     - flexslider_fields
     - flexslider_views
     - image
     - node
     - user
-id: slider
-label: slider
+id: image
+label: Image
 module: views
 description: ''
 tag: ''
@@ -121,10 +121,10 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_slider:
-          id: field_slider
-          table: node__field_slider
-          field: field_slider
+        field_photos:
+          id: field_photos
+          table: node__field_photos
+          field: field_photos
           relationship: none
           group_type: group
           admin_label: ''
@@ -204,7 +204,7 @@ display:
           table: node_field_data
           field: type
           value:
-            slideshow: slideshow
+            slider_images: slider_images
           entity_type: node
           entity_field: type
           plugin_id: bundle
@@ -227,7 +227,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: ''
+      title: Image
       header: {  }
       footer: {  }
       empty: {  }
@@ -243,7 +243,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_slider'
+        - 'config:field.storage.node.field_photos'
   page_1:
     display_plugin: page
     id: page_1
@@ -251,7 +251,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: slider
+      path: image
     cache_metadata:
       max-age: -1
       contexts:
@@ -261,4 +261,4 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_slider'
+        - 'config:field.storage.node.field_photos'

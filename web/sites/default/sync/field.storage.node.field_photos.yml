@@ -1,4 +1,4 @@
-uuid: 76212024-429e-421c-a041-31ac0845171b
+uuid: bb215124-e1da-4109-b800-aab3909d25df
 langcode: en
 status: true
 dependencies:
@@ -6,13 +6,14 @@ dependencies:
     - file
     - image
     - node
-id: node.field_slider
-field_name: field_slider
+id: node.field_photos
+field_name: field_photos
 entity_type: node
 type: image
 settings:
+  uri_scheme: public
   default_image:
-    uuid: null
+    uuid: ''
     alt: ''
     title: ''
     width: null
@@ -20,7 +21,6 @@ settings:
   target_type: file
   display_field: false
   display_default: false
-  uri_scheme: public
 module: image
 locked: false
 cardinality: 1

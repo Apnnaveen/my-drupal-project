@@ -1,44 +1,48 @@
-uuid: aa357dff-07d8-40c1-b646-e3770afb4131
+uuid: fcf6a21a-2bcb-4e1d-8f3b-a3ef6adb5ec4
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.slideshow.body
-    - field.field.node.slideshow.field_slider
-    - image.style.thumbnail
-    - node.type.slideshow
+    - field.field.node.services_2.field_bottom
+    - field.field.node.services_2.field_head
+    - field.field.node.services_2.field_middle
+    - node.type.services_2
   module:
-    - image
     - path
-    - text
-id: node.slideshow.default
+id: node.services_2.default
 targetEntityType: node
-bundle: slideshow
+bundle: services_2
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 121
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-      show_summary: false
-    third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
     weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_slider:
+  field_bottom:
+    weight: 123
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_head:
+    weight: 121
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_middle:
     weight: 122
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: image_image
+    type: string_textfield
     region: content
   path:
     type: path

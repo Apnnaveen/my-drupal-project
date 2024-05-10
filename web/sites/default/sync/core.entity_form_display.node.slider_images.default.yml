@@ -1,39 +1,27 @@
-uuid: 5ddcd997-9a30-4a95-9535-b8a2433780c6
+uuid: b698b96e-ce84-4aa8-9341-b72bdae725bd
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.sliderimages.body
-    - field.field.node.sliderimages.field_slides
+    - field.field.node.slider_images.field_photos
     - image.style.thumbnail
-    - node.type.sliderimages
+    - node.type.slider_images
   module:
     - image
     - path
-    - text
-id: node.sliderimages.default
+id: node.slider_images.default
 targetEntityType: node
-bundle: sliderimages
+bundle: slider_images
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 121
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-      show_summary: false
-    third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
     weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_slides:
-    weight: 122
+  field_photos:
+    weight: 121
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail

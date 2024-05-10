@@ -1,17 +1,17 @@
-uuid: 90849f97-3d11-4f5e-8be1-ead8847a1caf
+uuid: 4a9bbc73-47ab-4f90-bfed-3f99aebacf38
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_slider
-    - node.type.slideshow
+    - field.storage.node.field_photos
+    - node.type.slider_images
   module:
     - image
-id: node.slideshow.field_slider
-field_name: field_slider
+id: node.slider_images.field_photos
+field_name: field_photos
 entity_type: node
-bundle: slideshow
-label: 'slider image'
+bundle: slider_images
+label: photos
 description: ''
 required: false
 translatable: false

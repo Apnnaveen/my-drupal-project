@@ -1,0 +1,39 @@
+uuid: 4eba200a-e37b-45a6-8509-63869754e410
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.service_2
+    - field.field.block_content.service_2.field_bottom
+    - field.field.block_content.service_2.field_head
+    - field.field.block_content.service_2.field_middle
+id: block_content.service_2.default
+targetEntityType: block_content
+bundle: service_2
+mode: default
+content:
+  field_bottom:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_head:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_middle:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }
