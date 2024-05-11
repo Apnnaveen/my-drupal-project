@@ -23,6 +23,8 @@
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
+        "drupal/flexslider": "2.0",
+        "drupal/paragraphs": "1.13",
         "drupal/token": "1.10",
         "drupal/twig_tweak": "2.10",
         "drupal/webform": "5.31",

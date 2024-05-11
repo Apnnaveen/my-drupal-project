@@ -1,0 +1,40 @@
+uuid: b0e76ea7-6ecc-43c3-b310-fb650ffb52bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.service
+    - field.field.block_content.service.body
+    - field.field.block_content.service.field_one
+    - field.field.block_content.service.field_two
+  module:
+    - text
+id: block_content.service.default
+targetEntityType: block_content
+bundle: service
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_one:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_two:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }
