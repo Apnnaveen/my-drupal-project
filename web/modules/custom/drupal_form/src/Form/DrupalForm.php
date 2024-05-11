@@ -66,11 +66,12 @@ class DrupalForm extends FormBase
       '#type' => 'submit',
       '#value' => $this->t('Submit'),
     ];
- 
+
     return $form;
-   
+    
+
   }
-  
+
 
   /**
    * {@inheritdoc}
@@ -114,10 +115,10 @@ class DrupalForm extends FormBase
     $age = $form_state->getValue('age');
     $qualification = $form_state->getValue('qualification');
     $images = $form_state->getValue('images');
-  
+
     // Save to content
     $this->saveContent($title, $name, $age, $qualification, $images);
- 
+
 
     // Optionally, you can also show a message to the user
     $connection = Database::getConnection();
@@ -140,8 +141,8 @@ class DrupalForm extends FormBase
   {
 
     $nid = \Drupal::request()->query->get('id');
-    if ($nid){
-  
+    if ($nid) {
+
       $node = \Drupal\node\Entity\Node::load($nid);
       if ($node) {
         // Update the field values.
@@ -152,11 +153,10 @@ class DrupalForm extends FormBase
         $node->set('field_images', $images);
         // Save the updated node.
         $node->save();
-        
+
       }
-     
-    }
-    else{
+
+    } else {
       $entity = \Drupal::entityTypeManager()->getStorage('node')->create([
         'type' => 'students',
         'title' => $title,
@@ -170,6 +170,6 @@ class DrupalForm extends FormBase
 
     }
 
-   
+
   }
 }
